@@ -1,6 +1,6 @@
 {
-	"translatorID": "64099898-b865-49c5-a765-cdb80f69a7d4",
-	"label": "Pocket Cast",
+	"translatorID": "f7888ee9-1804-488a-a360-cfbc3f04ad52",
+	"label": "Pocket cast",
 	"creator": "Amanda Chen",
 	"target": "https://pca.st/.*",
 	"minVersion": "5.0",
@@ -8,8 +8,8 @@
 	"priority": 100,
 	"inRepository": true,
 	"translatorType": 4,
-	"browserSupport": "gcsbv",
-	"lastUpdated": "2023-07-29 20:55:00"
+	"browserSupport": "gcsibv",
+	"lastUpdated": "2023-07-29 14:36:43"
 }
 
 
@@ -49,11 +49,11 @@ async function doWeb(doc, url) {
 
 async function scrape(doc, url = doc.location.href) {
 	var title = ZU.xpath(doc, "//head/title"); 
-    title = title[0].innerText.split(' - ')[0];  
-    var abstractNote = ZU.xpath(doc, "/html/head/meta[3]");  
-    abstractNote = abstractNote[0].getAttribute('content'); 
-    var accessDate = ZU.xpath(doc, "//*[@id='episode_date']");
-    accessDate = accessDate[0].innerText;
+    	title = title[0].innerText.split(' - ')[0];  
+    	var abstractNote = ZU.xpath(doc, "/html/head/meta[3]");  
+    	abstractNote = abstractNote[0].getAttribute('content'); 
+    	var accessDate = ZU.xpath(doc, "//*[@id='episode_date']");
+    	accessDate = accessDate[0].innerText;
 	var runningTime = ZU.xpath(doc, "//*[@id='duration_time']");
 	runningTime = runningTime[0].innerText;
 	var url = ZU.xpath(doc, "/html/head/meta[6]");
@@ -62,8 +62,6 @@ async function scrape(doc, url = doc.location.href) {
 	creators = creators[0].innerText.split(' - ')[1];
 	var note_content = ZU.xpath(doc, "//*[contains(@class, 'section show_notes')]");
 	note_content = note_content[0].innerHTML;
-	note_content = note_content.replace(/\"/g, "'");
-	note_content = note_content.replace(/<img .*?src='(.*?)'.*?>/g, "<img src='$1'\/>");
 
 
 	var newItem = new Zotero.Item("podcast");
@@ -73,7 +71,7 @@ async function scrape(doc, url = doc.location.href) {
 	newItem.runningTime = runningTime;
 	newItem.url = url;
 	newItem.creators = [{ lastName: creators, creatorType: "podcaster", fieldMode: 1 }]
-    newItem.notes.push({note:note_content}); 
-    newItem.complete();
+    	newItem.notes.push({note:note_content}); 
+    	newItem.complete();
 }
 
