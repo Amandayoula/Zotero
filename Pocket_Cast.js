@@ -86,38 +86,3 @@ async function scrape(doc, url = doc.location.href) {
 	newItem.notes.push({note:note_content2}); 
 	newItem.complete();		
 }
-
-/** BEGIN TEST CASES **/
-var testCases = [
-	{
-		"type": "web",
-		"url": "https://pca.st/xelg96k2",
-		"detectedItemType": "podcast",
-		"items": [
-			{
-				"itemType": "podcast",
-				"title": "装修踩过啥坑？《房产达人》帮你回忆",
-				"creators": [
-					{
-						"lastName": "超级游文化",
-						"creatorType": "podcaster",
-						"fieldMode": 1
-					}
-				],
-				"abstractNote": "播客公社出品，每周六更新。畅谈游戏背后的文化与生活，交流与建议请搜索播客公社，私信注明“超游”",
-				"extra": "Friday 30 June 2023",
-				"runningTime": "01:22:35",
-				"url": "https://pca.st/xelg96k2",
-				"attachments": [],
-				"tags": [],
-				"notes": [
-					{
-						"note": "<p>【制作团队】</p><p>主播：野人、金花、小朱、恶霸波</p><p>后期：恶霸波</p><p>【本集内容】</p><p>野哥这期节目现身说法，分享了一下自己装修踩过的坑。兄弟们听了都可开心了……</p><p>废话不多说，先上图，野哥看了下面的效果图，燃起了自己的斗志！</p><p><img src=\"http://imagev2.xmcdn.com/storages/1fa3-audiofreehighqps/7E/99/GKwRIUEIdI8bAAe3LwIxS4Uq.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p><img src=\"http://imagev2.xmcdn.com/storages/cb51-audiofreehighqps/DE/D4/GKwRIDoIdI8pAANcVQIxS4yx.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p><img src=\"http://imagev2.xmcdn.com/storages/40be-audiofreehighqps/29/83/GKwRIJIIdI86AAgaXwIxS5S2.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p><img src=\"http://imagev2.xmcdn.com/storages/0943-audiofreehighqps/BF/EF/GMCoOSAIdI9GAAZdkgIxS5pI.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p><img src=\"http://imagev2.xmcdn.com/storages/efe9-audiofreehighqps/CB/AD/GMCoOSYIdI9TAAd7ZwIxS6Ca.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p>然而！！！</p><p>理想很丰满，现实很骨感！</p><p>让我们再看看野哥千辛万苦装好的实际结果！</p><p>上图！</p><p><img src=\"http://imagev2.xmcdn.com/storages/56d1-audiofreehighqps/C5/9F/GMCoOSUIdI-PAAartQIxS74o.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p><img src=\"http://imagev2.xmcdn.com/storages/cc09-audiofreehighqps/1A/00/GMCoOSAIdI-gAA9dSAIxS8a4.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p><img src=\"http://imagev2.xmcdn.com/storages/aa5c-audiofreehighqps/D4/3F/GKwRIaIIdI-xAAZZgAIxS82Q.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p><img src=\"http://imagev2.xmcdn.com/storages/119e-audiofreehighqps/F0/2F/GKwRIaIIdI_KAALhuQIxS9d-.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p><img src=\"http://imagev2.xmcdn.com/storages/334b-audiofreehighqps/2D/3A/GMCoOSAIdI_iAAWK8wIxS-LX.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p><img src=\"http://imagev2.xmcdn.com/storages/f9f7-audiofreehighqps/4F/55/GMCoOSYIeAo2AAJDcQIyiG9L.jpg!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large\" alt=\"\"><br></p><p>怎么说呢……</p><p>我挺同情野哥的……</p><p>希望大家评论区就不要再刺激野哥了……</p>"
-					}
-				],
-				"seeAlso": []
-			}
-		]
-	}
-]
-/** END TEST CASES **/
